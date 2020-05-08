@@ -52,7 +52,7 @@ cacheSolve <- function(y, ...) {
   data <- y$get()
   
   ## Calculate the inverse using matrix multiplication
-  m <- solve(data) %*% data
+  m <- solve(data)
   
   ## Set the inverse to the object
   y$setInverse(m)
